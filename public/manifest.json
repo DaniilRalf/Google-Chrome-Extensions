@@ -1,25 +1,40 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
-  "icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
+  "name": "Itwis extensional",
+  "description": "Itwis extensional description",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "cookies"
   ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "host_permissions": [
+    "https://thecode.media/extention/",
+    "*://*/*"
+  ],
+  "optional_host_permissions": [
+    "*://*/*"
+  ],
+
+
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Itwis extensional",
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "/4-01.png",
+      "32": "/3-01.png",
+      "48": "/2-01.png",
+      "128": "/1-01.png"
+    }
+  },
+  "icons": {
+    "16": "/4-01.png",
+    "32": "/3-01.png",
+    "48": "/2-01.png",
+    "128": "/1-01.png"
+  }
 }
